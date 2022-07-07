@@ -14,13 +14,15 @@ body {
 	left: 0;
 	z-index: 99;
 	backdrop-filter: blur(2px);
-	background-color: rgba(170, 170, 170, 0.5);
+	background-color: rgba(255, 255, 255, 0);
+	/* color: white; */
 }
 
 .top-bar ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	color: white;
 }
 
 .brand {
@@ -28,7 +30,7 @@ body {
 }
 
 .list-item {
-	color: black;
+	color: white;
 	text-decoration: none;
 	padding: 20px;
 }
@@ -45,19 +47,35 @@ body {
 	color:rgb(255, 255, 255);
 }
 
+@media (max-height: 700px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		height: 600px;
+	}
+}
+
+@media (min-height: 701px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		height: 900px;
+	}
+}
+
 #about {
-	/* padding: 50%; */
-	height: 50px;
-	/* text-align: center; */
-	background-image: linear-gradient(45deg, red, blue);
+	background-color: black;
 	width: 100%;
-	/* position: relative; */
-	/* top: 0; */
-	/* left: 0; */
 }
 
 #about .text {
-	margin: 40%;
+	font-family: 'Courier New', monospace;
+	font-size: 1.5em;
+	font-weight: 700;
+	color: white;
+	text-align: center;
 	width: 100%;
 }
 
