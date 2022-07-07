@@ -14,15 +14,15 @@ body {
 	left: 0;
 	z-index: 99;
 	backdrop-filter: blur(2px);
-	background-color: rgba(255, 255, 255, 0);
-	/* color: white; */
+	-webkit-backdrop-filter: blur(2px);
+	background-color: rgba(255, 255, 255, .8);
 }
 
 .top-bar ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	color: white;
+	color: black;
 	list-style-position: inside;
 }
 
@@ -38,23 +38,11 @@ body {
 }
 
 .list-item {
-	color: white;
+	color: black;
 	text-decoration: none;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	padding-right: 40px;
-}
-
-#nav-bg {
-	background-color: rgb(54, 194, 61);
-	top: 0;
-	left: 0;
-	position: relative;
-}
-
-#bg-text {
-	padding: 20px;
-	color:rgb(255, 255, 255);
 }
 
 @media (max-height: 700px) {
@@ -63,6 +51,7 @@ body {
 		flex-direction: column;
 		justify-content: space-around;
 		height: 600px;
+		width: 100%;
 	}
 }
 
@@ -72,30 +61,51 @@ body {
 		flex-direction: column;
 		justify-content: space-around;
 		height: 900px;
+		width: 100%;
 	}
 }
 
-#about {
-	background-color: black;
-	width: 100%;
-}
-
-#about .text {
+.text {
 	font-family: 'Courier New', monospace;
 	font-size: 1.5em;
 	font-weight: 700;
-	color: white;
 	text-align: center;
 	width: 100%;
 }
 
+/* ABOUT */
+#about {
+	background-color: black;
+}
+
+#about .text {
+	color: white;
+}
+
+/* PROJECTS */
 #projects {
-	height: 700px;
-	text-align: center;
-	background-image: linear-gradient(45deg, red, blue);
-	position: relative;
-	left: 0;
-	/* margin-right: auto; */
-	margin-left: -1;
-	width: 100%;
+	background-color: white;
+}
+
+#projects .text {
+	color: black;
+}
+
+
+/* CERTIFICATIONS */
+#certifications {
+	background-color: black;
+}
+
+#certifications .text {
+	color: white;
+}
+
+/* CONTACT */
+#contact {
+	background-color: white;
+}
+
+#contact .text {
+	color: black;
 }
