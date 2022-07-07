@@ -23,16 +23,26 @@ body {
 	flex-direction: row;
 	justify-content: space-between;
 	color: white;
+	list-style-position: inside;
 }
 
 .brand {
 	font-weight: 800;
 }
 
+.list-group {
+	display: flex;
+	flex-direction: row;
+	margin-right: 1em;
+	justify-content: space-around;
+}
+
 .list-item {
 	color: white;
 	text-decoration: none;
-	padding: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 40px;
 }
 
 #nav-bg {
