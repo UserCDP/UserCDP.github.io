@@ -3,7 +3,8 @@ body {
 	margin: 0px;
 	padding: 0px;
 	overflow-x: hidden;
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-family: 'Courier New', monospace;
+	/* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
 
 .top-bar {
@@ -27,22 +28,42 @@ body {
 }
 
 .brand {
-	font-weight: 800;
+	font-weight: 900;
+	font-size: larger;
 }
 
-.list-group {
-	display: flex;
-	flex-direction: row;
-	margin-right: 1em;
-	justify-content: space-around;
+@media (min-width: 601px) {
+	.list-group {
+		display: flex;
+		flex-direction: row;
+		margin-right: 1em;
+		justify-content: space-around;
+	}
+	.menu {
+		display: none;
+	}
+}
+
+@media (max-width: 600px) {
+	.list-group {
+		display: none;
+	}
+	.menu {
+		display: inline;
+	}
 }
 
 .list-item {
 	color: black;
 	text-decoration: none;
+	font-weight: 500;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	padding-right: 40px;
+	padding-right: 30px;
+}
+
+.list-item:hover {
+	text-decoration: underline solid 2px;
 }
 
 @media (max-height: 700px) {
@@ -66,7 +87,6 @@ body {
 }
 
 .text {
-	font-family: 'Courier New', monospace;
 	font-size: 1.5em;
 	font-weight: 700;
 	text-align: center;
