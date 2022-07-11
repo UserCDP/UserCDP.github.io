@@ -4,6 +4,7 @@ body {
 	padding: 0px;
 	overflow-x: hidden;
 	font-family: 'Courier New', monospace;
+	background-image: linear-gradient(45deg, red, blue);
 	/* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
 
@@ -72,7 +73,9 @@ body {
 		flex-direction: column;
 		justify-content: space-around;
 		height: 600px;
-		width: 100%;
+		width: auto;
+		border-radius: 10px;
+		margin: 6px;
 	}
 }
 
@@ -82,7 +85,10 @@ body {
 		flex-direction: column;
 		justify-content: space-around;
 		height: 900px;
-		width: 100%;
+		width: auto;
+		border-radius: 10px;
+		margin: 6px;
+		left: 0;
 	}
 }
 
