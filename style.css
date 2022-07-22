@@ -68,15 +68,16 @@ body {
 	text-decoration: underline solid 1px;
 }
 
-.container {
+.title {
 	display: block;
 	border-radius: 10px;
 	margin: 10px;
 	position: relative;
 	left: 0;
+	padding: 20px;
 }
 
-@media (max-height: 700px) {
+/* @media (max-height: 700px) {
 	.container {
 		height: 600px;
 	}
@@ -86,7 +87,7 @@ body {
 	.container {
 		height: 800px;
 	}
-}
+} */
 
 .text {
 	display: block;
@@ -95,11 +96,11 @@ body {
 	text-align: center;
 	width: 100%;
 	position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    /*top: 50%;
+    transform: translateY(-50%);*/
 }
 
-.more {
+/* .more {
 	text-align: right;
 	position: absolute;
 	font: inherit;
@@ -112,18 +113,21 @@ body {
 	line-height: 0.6em;
 	border-radius: 50px;
 	border: 0px solid;
+} */
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
-.rotation {
-	animation: spin 0.5s forwards;
+.proj {
+	border-radius: 10px;
 }
 
-@keyframes spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(45deg);
+@media (max-width: 400px) {
+	.proj {
+		width: 90%;
 	}
 }
 
@@ -168,3 +172,12 @@ body {
 #contact .text {
 	color: black;
 }
+
+
+#map {
+	height: 400px;
+	/* The height is 400 pixels */
+	width: 100%;
+	/* The width is the width of the web page */
+  }
+  
