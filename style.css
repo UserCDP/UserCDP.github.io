@@ -6,7 +6,6 @@ body {
 	font-family: 'Courier New', monospace;
 	background-image: linear-gradient(45deg, red, blue);
 	background-repeat: no-repeat;
-	/* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
 
 .top-bar {
@@ -34,40 +33,6 @@ body {
 	font-size: larger;
 }
 
-@media (min-width: 701px) {
-	.list-group {
-		display: flex;
-		flex-direction: row;
-		margin-right: 1em;
-		justify-content: space-around;
-	}
-	.menu {
-		display: none;
-	}
-}
-
-@media (max-width: 700px) {
-	.list-group {
-		display: none;
-	}
-	.menu {
-		display: inline;
-	}
-}
-
-.list-item {
-	color: black;
-	text-decoration: none;
-	font-weight: 500;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-right: 30px;
-}
-
-.list-item:hover {
-	text-decoration: underline solid 1px;
-}
-
 .title {
 	display: block;
 	border-radius: 10px;
@@ -76,18 +41,6 @@ body {
 	left: 0;
 	padding: 20px;
 }
-
-/* @media (max-height: 700px) {
-	.container {
-		height: 600px;
-	}
-}
-
-@media (min-height: 701px) {
-	.container {
-		height: 800px;
-	}
-} */
 
 .text {
 	display: block;
@@ -99,21 +52,6 @@ body {
     /*top: 50%;
     transform: translateY(-50%);*/
 }
-
-/* .more {
-	text-align: right;
-	position: absolute;
-	font: inherit;
-	right: 0;
-	bottom: 0;
-	margin: 20px;
-	padding: 10px;
-	font-size: 2.4em;
-	font-weight: 600;
-	line-height: 0.6em;
-	border-radius: 50px;
-	border: 0px solid;
-} */
 
 .container {
 	display: flex;
@@ -131,45 +69,9 @@ body {
 	}
 }
 
-.black {
-	color: white;
-	background-color: black;
-}
-
-/* ABOUT */
-#about {
-	background-color: black;
-}
-
-#about .text {
-	color: white;
-}
-
 /* PROJECTS */
 #projects {
 	background-color: white;
-}
-
-#projects .text {
-	color: black;
-}
-
-
-/* CERTIFICATIONS */
-#certifications {
-	background-color: black;
-}
-
-#certifications .text {
-	color: white;
-}
-
-/* CONTACT */
-#contact {
-	background-color: white;
-}
-
-#contact .text {
 	color: black;
 }
 
