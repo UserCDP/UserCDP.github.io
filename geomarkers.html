@@ -13,6 +13,33 @@
     <!--The div element for the map -->
     <div id="map"></div>
 
+    <div class="col-2" id="forms-col">
+      <template id="points-num-template">
+        <form id="points-num">
+          <input type="number" step="any" id="points" placeholder="Nº of area corners">
+          <input type="submit" value="Continue">
+        </form>
+      </template>
+
+      <template id="coord-input-template">
+        <form id="coord-input" class="form-group col">
+
+        </form>
+      </template>
+
+      <template id = "projection-settings">
+        <div id="opacity-div">
+          <label for="opacity" id="op-label">Opacity: </label>
+          <input type="range" id="opacity" min="0" max="1" step="0.1" value="0.5" onchange="opacityChange()">
+          <span id="op-value">0.5</span>
+        </div>
+
+        <label for="color">Colo: </label>
+        <input type="color" id="color" value="#ff0000" id="color"> <br>
+      </template>
+
+    </div>
+
     <!-- 
      The `defer` attribute causes the callback to execute after the full HTML
      document has been parsed. For non-blocking uses, avoiding race conditions,
@@ -20,7 +47,7 @@
      with https://www.npmjs.com/package/@googlemaps/js-api-loader.
     -->
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDho7Ep2AhWKtbtNPinongVf-awIPimRmA&callback=initMap&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDho7Ep2AhWKtbtNPinongVf-awIPimRmA&callback=initMap&v=weekly&libraries=drawing"
       defer
     ></script>
   </body>
