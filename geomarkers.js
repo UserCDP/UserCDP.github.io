@@ -92,6 +92,7 @@ function initCustomMap(polygon, center_lat, center_lng, color, opacity) {
         zoom: 5,
         center: { lat: center_lat, lng: center_lng },
         mapTypeId: "hybrid",
+        streetViewControl: false,
     });
 
     //console.log(polygon);
@@ -130,6 +131,7 @@ function initMap() {
         center: { lat: 46, lng: 24.46 },
         mapTypeId: "hybrid",
         drawingMode: "Point",
+        streetViewControl: false,
     });
     const drawingManager = new google.maps.drawing.DrawingManager({
         //drawingMode: google.maps.drawing.OverlayType.MARKER,

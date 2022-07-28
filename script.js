@@ -1,7 +1,7 @@
 window.onload = () => {
 
     var top_bar = document.querySelector(".top-bar");
-    var about = document.querySelector("#projects");
+    var content = document.querySelector("#content");
 
-    about.style.marginTop =(top_bar.clientHeight + 10) + "px";
+    content.style.marginTop =(top_bar.clientHeight + 10) + "px";
 };

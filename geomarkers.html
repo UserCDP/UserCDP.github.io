@@ -4,40 +4,48 @@
     <title>Add Map</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="geomarkers.js"></script>
+    <script src="script.js"></script>
 
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <!-- <script type="module" src="./index.js"></script> -->
   </head>
   <body>
-    <h3>My Google Maps Demo</h3>
-    <!--The div element for the map -->
-    <div id="map"></div>
+    <nav class="top-bar">
+      <span class="brand">UserCDP</span>
+    </nav>
 
-    <div class="col-2" id="forms-col">
-      <template id="points-num-template">
-        <form id="points-num">
-          <input type="number" step="any" id="points" placeholder="Nº of area corners">
-          <input type="submit" value="Continue">
-        </form>
-      </template>
+    <div id="content">
+      <div class="map-rows">
+        
+        <div id="map"></div>
 
-      <template id="coord-input-template">
-        <form id="coord-input" class="form-group col">
+        <div id="forms-col">
+          <template id="points-num-template">
+            <form id="points-num">
+              <input type="number" step="any" id="points" placeholder="Nº of area corners">
+              <input type="submit" value="Continue">
+            </form>
+          </template>
 
-        </form>
-      </template>
+          <template id="coord-input-template">
+            <form id="coord-input" class="form-group col">
 
-      <template id = "projection-settings">
-        <div id="opacity-div">
-          <label for="opacity" id="op-label">Opacity: </label>
-          <input type="range" id="opacity" min="0" max="1" step="0.1" value="0.5" onchange="opacityChange()">
-          <span id="op-value">0.5</span>
+            </form>
+          </template>
+
+          <template id = "projection-settings">
+            <div id="opacity-div">
+              <label for="opacity" id="op-label">Opacity: </label>
+              <input type="range" id="opacity" min="0" max="1" step="0.1" value="0.5" onchange="opacityChange()">
+              <span id="op-value">0.5</span>
+            </div>
+
+            <label for="color">Colo: </label>
+            <input type="color" id="color" value="#ff0000" id="color"> <br>
+          </template>
+
         </div>
-
-        <label for="color">Colo: </label>
-        <input type="color" id="color" value="#ff0000" id="color"> <br>
-      </template>
-
+      </div>
     </div>
 
     <!-- 
@@ -48,7 +56,7 @@
     -->
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDho7Ep2AhWKtbtNPinongVf-awIPimRmA&callback=initMap&v=weekly&libraries=drawing"
-      defer
-    ></script>
+      defer>
+    </script>
   </body>
 </html>
