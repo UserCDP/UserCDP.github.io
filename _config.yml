@@ -25,13 +25,13 @@ description: >- # this means to ignore newlines until "baseurl:"
   programming and privacy.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: UserCDP
+mastodon_username: @UserCDP@mastodon.social
 github_username:  UserCDP
 
 # Build settings
 remote_theme: pages-themes/hacker@v0.2.0
 
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
